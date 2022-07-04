@@ -1,12 +1,25 @@
 body{
     background-color: hsl(30, 38%, 92%);
+      
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-    border: 2px gray solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:auto;
+    border:1px black solid;
+}
+
+#picture{
+    border-radius: 25px 0px 0px 25px;
+    background: url(/product-preview-card-component-main/images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: initial;
+    height: 600px;
+    border: 2px solid red;
 }
