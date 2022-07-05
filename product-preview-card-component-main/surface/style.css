@@ -4,6 +4,7 @@ body{
 }
 
 .card {
+    border-radius: 25px 0px 0px 25px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,11 +16,26 @@ body{
 }
 
 #picture{
-    border-radius: 25px 0px 0px 25px;
     background: url(/product-preview-card-component-main/images/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: initial;
     height: 600px;
     border: 2px solid red;
+    display: inline-block;
+    background-color: green;
+    width: 100%;
+}
+
+#text{
+    width: 100%;
+    display: inline-block;
+    background-color: gold;
+}
+
+@media screen and (max-width: 500px) {
+  
+    #picture,
+    #text {
+        width: 70%;
+    }
 }
